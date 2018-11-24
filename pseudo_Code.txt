@@ -1,0 +1,15 @@
+
+def add_one(given_arr):
+	carry = 1
+	result = array(length.given_arr)
+	for i from length.given_arr to 0:
+		total = given_arr[i] + carry
+		if total == 10:
+			carry = 1
+		else:
+			carry = 0
+		result[i] = total % 10
+	if carry == 1:
+		result = array(length.given_arr+1)
+		result[0] = 1
+	return result
